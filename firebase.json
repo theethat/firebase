@@ -9,7 +9,10 @@
     ]
   },
   "hosting": {
-    "public": "public",
+    "predeploy": [
+      "ng build"
+    ],
+    "public": "public/dist/dictjptoth",
     "ignore": [
       "firebase.json",
       "**/.*",
